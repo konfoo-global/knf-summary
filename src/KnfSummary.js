@@ -28,7 +28,6 @@ export class KnfSummary extends LitElement {
 	}
 
 	connectedCallback() {
-		console.log('connectedCallback');
 		super.connectedCallback();
 		window.addEventListener('konfoo-message', this.onMessage);
 
@@ -37,7 +36,6 @@ export class KnfSummary extends LitElement {
 	}
 
 	disconnectedCallback() {
-		console.log('disconnectedCallback');
 		super.disconnectedCallback();
 		window.removeEventListener('konfoo-message', this.onMessage);
 	}
